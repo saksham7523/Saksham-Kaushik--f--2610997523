@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Restaurant Menu</title>
+</head>
+<body>
+    <h1>Interactive Restaurant Menu</h1>
+    <p>Click on any food item to see more details.</p>
+
+    <img src="images/menu.svg" width="800" height="500" alt="Restaurant menu with pizza, burger, fries, menu card, sandwich and cake" usemap="#foodmap">
+
+    <map name="foodmap">
+        <!-- 2 circle areas -->
+        <area shape="circle" coords="150,150,100" href="pizza.html" alt="Pizza" target="_blank">
+        <area shape="circle" coords="400,150,90" href="burger.html" alt="Burger" target="_blank">
+
+        <!-- 2 rect areas -->
+        <area shape="rect" coords="565,45,720,240" href="fries.html" alt="French Fries" target="_blank">
+        <area shape="rect" coords="30,300,200,470" href="menucard.html" alt="Menu Card" target="_blank">
+
+        <!-- 2 poly areas -->
+        <area shape="poly" coords="250,470,380,310,510,470" href="sandwich.html" alt="Sandwich" target="_blank">
+        <area shape="poly" coords="580,460,600,330,770,380,770,460" href="cake.html" alt="Cake Slice" target="_blank">
+
+        <!-- default area (remaining part of the image) -->
+        <area shape="default" href="other.html" alt="Restaurant Information" target="_blank">
+    </map>
+</body>
+</html>

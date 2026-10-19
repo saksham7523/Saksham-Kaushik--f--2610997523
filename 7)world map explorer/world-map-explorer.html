@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Map Explorer</title>
+</head>
+<body>
+
+  <h1>World Map Explorer</h1>
+  <p>Click on a country on the map below to open an information page in a new tab.</p>
+
+  <!--
+    The map image is a simple drawing (SVG) embedded directly in the src attribute,
+    so this file works on its own. It is 800 x 400 pixels.
+    To use a real world map, replace the src with your own image (e.g. "world-map.jpg")
+    and adjust the coords below to match that image.
+  -->
+  <img
+    src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'>
+      <rect width='800' height='400' fill='lightblue'/>
+      <rect x='100' y='110' width='160' height='80' fill='lightgreen' stroke='darkgreen' stroke-width='2'/>
+      <text x='180' y='155' font-size='16' text-anchor='middle' font-family='Arial'>USA</text>
+      <rect x='440' y='170' width='50' height='45' fill='khaki' stroke='darkgoldenrod' stroke-width='2'/>
+      <text x='465' y='198' font-size='12' text-anchor='middle' font-family='Arial'>Egypt</text>
+      <circle cx='290' cy='290' r='45' fill='lightgreen' stroke='darkgreen' stroke-width='2'/>
+      <text x='290' y='295' font-size='14' text-anchor='middle' font-family='Arial'>Brazil</text>
+      <circle cx='680' cy='150' r='18' fill='lightpink' stroke='crimson' stroke-width='2'/>
+      <text x='680' y='185' font-size='12' text-anchor='middle' font-family='Arial'>Japan</text>
+      <polygon points='545,175 610,175 590,235 565,285 540,235' fill='orange' stroke='darkorange' stroke-width='2'/>
+      <text x='573' y='220' font-size='14' text-anchor='middle' font-family='Arial'>India</text>
+      <polygon points='650,290 740,290 750,340 700,360 650,340' fill='sandybrown' stroke='saddlebrown' stroke-width='2'/>
+      <text x='700' y='330' font-size='14' text-anchor='middle' font-family='Arial'>Australia</text>
+    </svg>"
+    width="800"
+    height="400"
+    alt="Simple world map with USA, Egypt, Brazil, Japan, India and Australia"
+    usemap="#worldmap">
+
+  <map name="worldmap">
+
+    <!-- RECT: USA (left, top, right, bottom) -->
+    <area shape="rect" coords="100,110,260,190"
+          href="https://en.wikipedia.org/wiki/United_States"
+          alt="United States of America (rectangular region)"
+          target="_blank">
+
+    <!-- RECT: Egypt -->
+    <area shape="rect" coords="440,170,490,215"
+          href="https://en.wikipedia.org/wiki/Egypt"
+          alt="Egypt (rectangular region)"
+          target="_blank">
+
+    <!-- CIRCLE: Brazil (center x, center y, radius) -->
+    <area shape="circle" coords="290,290,45"
+          href="https://en.wikipedia.org/wiki/Brazil"
+          alt="Brazil (circular region)"
+          target="_blank">
+
+    <!-- CIRCLE: Japan -->
+    <area shape="circle" coords="680,150,18"
+          href="https://en.wikipedia.org/wiki/Japan"
+          alt="Japan (circular region)"
+          target="_blank">
+
+    <!-- POLY: India (x1,y1,x2,y2,...) -->
+    <area shape="poly" coords="545,175,610,175,590,235,565,285,540,235"
+          href="https://en.wikipedia.org/wiki/India"
+          alt="India (irregular polygon region)"
+          target="_blank">
+
+    <!-- POLY: Australia -->
+    <area shape="poly" coords="650,290,740,290,750,340,700,360,650,340"
+          href="https://en.wikipedia.org/wiki/Australia"
+          alt="Australia (irregular polygon region)"
+          target="_blank">
+
+    <!-- DEFAULT: covers the rest of the image that is not inside any other area.
+         Put it last, because the browser uses the first matching area. -->
+    <area shape="default"
+          href="https://en.wikipedia.org/wiki/World_map"
+          alt="Rest of the world map (default region)"
+          target="_blank">
+
+  </map>
+
+  <h2>How the shapes work</h2>
+  <ul>
+    <li><strong>rect</strong> (USA, Egypt): coords are <code>left,top,right,bottom</code>.</li>
+    <li><strong>circle</strong> (Brazil, Japan): coords are <code>center-x,center-y,radius</code>.</li>
+    <li><strong>poly</strong> (India, Australia): coords are a list of <code>x,y</code> points that outline the shape.</li>
+    <li><strong>default</strong>: any click on the image that doesn't land in another area (the blue ocean, for example) opens the World Map page.</li>
+  </ul>
+
+  <h2>Country links</h2>
+  <p>Text links to the same pages, for anyone who can't use the map:</p>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/United_States" target="_blank">United States</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Egypt" target="_blank">Egypt</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Brazil" target="_blank">Brazil</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Japan</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/India" target="_blank">India</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Australia" target="_blank">Australia</a></li>
+  </ul>
+
+</body>
+</html>

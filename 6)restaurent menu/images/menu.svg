@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="Arial,sans-serif" text-anchor="middle">
+<rect width="800" height="500" fill="#fff3d6"/>
+<!-- Pizza -->
+<circle cx="150" cy="150" r="100" fill="#d99a3a"/><circle cx="150" cy="150" r="85" fill="#e53935"/><circle cx="150" cy="150" r="75" fill="#ffd54f" opacity=".85"/>
+<circle cx="120" cy="120" r="14" fill="#b71c1c"/><circle cx="185" cy="130" r="14" fill="#b71c1c"/><circle cx="150" cy="180" r="14" fill="#b71c1c"/><circle cx="110" cy="175" r="10" fill="#2e7d32"/><circle cx="195" cy="185" r="10" fill="#2e7d32"/>
+<path d="M150 75V225M75 150H225" stroke="#d99a3a" stroke-width="3"/><text x="150" y="275" font-size="22" font-weight="bold" fill="#5d4037">Pizza</text>
+<!-- Burger -->
+<circle cx="400" cy="150" r="90" fill="#fff"/><path d="M335 125Q400 50 465 125Z" fill="#e0a040"/><rect x="333" y="128" width="134" height="14" rx="7" fill="#43a047"/><rect x="333" y="142" width="134" height="12" fill="#ffca28"/><rect x="335" y="154" width="130" height="22" rx="10" fill="#5d4037"/><path d="M335 180H465Q460 205 400 205T335 180Z" fill="#e0a040"/>
+<text x="400" y="275" font-size="22" font-weight="bold" fill="#5d4037">Burger</text>
+<!-- Fries -->
+<g fill="#ffd54f" stroke="#f9a825"><rect x="585" y="60" width="16" height="90"/><rect x="610" y="45" width="16" height="105"/><rect x="635" y="65" width="16" height="85"/><rect x="660" y="50" width="16" height="100"/><rect x="685" y="70" width="16" height="80"/></g>
+<path d="M565 140H720L705 240H580Z" fill="#e53935"/><text x="642" y="200" font-size="26" font-weight="bold" fill="#fff">FRIES</text>
+<text x="642" y="275" font-size="22" font-weight="bold" fill="#5d4037">French Fries</text>
+<!-- Menu card -->
+<rect x="30" y="300" width="170" height="170" fill="#fff" stroke="#5d4037" stroke-width="4"/><text x="115" y="335" font-size="24" font-weight="bold" fill="#c62828">MENU</text>
+<g stroke="#999" stroke-width="3"><path d="M50 360H180M50 385H180M50 410H180M50 435H150"/></g><text x="115" y="490" font-size="20" font-weight="bold" fill="#5d4037">Menu Card</text>
+<!-- Sandwich -->
+<polygon points="250,470 380,310 510,470" fill="#e8b85c"/><polygon points="280,455 380,335 480,455" fill="#7cb342"/><polygon points="300,440 380,355 460,440" fill="#e53935"/><polygon points="320,430 380,375 440,430" fill="#fff59d"/>
+<text x="380" y="492" font-size="20" font-weight="bold" fill="#5d4037">Sandwich</text>
+<!-- Cake -->
+<polygon points="580,460 600,330 770,380 770,460" fill="#f8bbd0"/><polygon points="600,330 770,380 770,400 598,350" fill="#fff"/><circle cx="640" cy="335" r="12" fill="#c62828"/><circle cx="720" cy="365" r="12" fill="#c62828"/>
+<path d="M580 460H770" stroke="#8d6e63" stroke-width="6"/><text x="675" y="492" font-size="20" font-weight="bold" fill="#5d4037">Cake Slice</text>
+</svg>

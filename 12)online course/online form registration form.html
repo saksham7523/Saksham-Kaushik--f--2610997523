@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Registration</title>
+</head>
+<body>
+
+    <h1 align="center">Online Course Registration</h1>
+
+    <!-- Task 1: form with action and target -->
+    <form action="register.php" method="post" target="_blank" enctype="multipart/form-data">
+
+        <!-- Task 7: hidden input -->
+        <input type="hidden" name="formname" value="Online Course Registration">
+
+        <!-- Task 2, 3, 11: input fields with labels, placeholder, required -->
+        <p>
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+
+        <p>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+        </p>
+
+        <p>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </p>
+
+        <!-- Task 4: radio buttons (same name) -->
+        <p>
+            Gender:
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </p>
+
+        <!-- Task 5: checkboxes -->
+        <p>
+            Skills:
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+        </p>
+
+        <!-- Task 6: drop-down list (mandatory) -->
+        <p>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Python Programming">Python Programming</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+            </select>
+        </p>
+
+        <!-- Task 8: date and time -->
+        <p>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </p>
+
+        <p>
+            <label for="classtime">Preferred Class Time:</label>
+            <input type="time" id="classtime" name="classtime">
+        </p>
+
+        <!-- Task 9: textarea -->
+        <p>
+            <label for="info">Address / Additional Information:</label><br>
+            <textarea id="info" name="info" rows="4" cols="40" placeholder="Enter address or additional information"></textarea>
+        </p>
+
+        <!-- Task 10: file upload -->
+        <p>
+            <label for="file">Upload Document:</label>
+            <input type="file" id="file" name="file">
+        </p>
+
+        <!-- Task 12: submit and reset -->
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+
+    </form>
+
+</body>
+</html>
